@@ -407,8 +407,7 @@ class RichTextActivity :AppCompatActivity(), OnActionPerformListener {
         view.findViewById<View>(R.id.linear_delete_pic).setOnClickListener { v: View? ->
             //删除图片
             val removeUrl =
-                "<img src=\"" + currentUrl + "\" alt=\"delImg\" width=\"80" +
-                        "%\"><br>"
+                "<img src=\"$currentUrl\" alt=\"dachshund\" width=\"80%\"><br>"
             val newUrl: String = rich_Editor.html.replace(removeUrl, "")
             currentUrl = ""
             rich_Editor.html = newUrl
@@ -503,13 +502,24 @@ class RichTextActivity :AppCompatActivity(), OnActionPerformListener {
     }
 
 
+    // 以下图片视频地址，来自网络素材
     fun selectImage(){
-        // 进入相册
+        // 进入相册选择照片之后可以本地文件直接插入html，或者上传到服务器获取地址再插入html中
+
+        val path="https://upload-images.jianshu.io/upload_images/5809200-a99419bb94924e6d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+        againEdit()
+        rich_Editor.insertImage(path, "dachshund")
+        KeyBoardUtils.openKeyboard(edit_name, this@RichTextActivity)
 
     }
 
     fun selectVideo(){
-        // 选择视频 以下是例子：不需要的api可以不写
+        // 选择视频之后可以本地文件直接插入html，或者上传到服务器获取地址再插入html中
+
+        val path="https://media.w3.org/2010/05/sintel/trailer.mp4"
+        againEdit()
+        rich_Editor.insertVideoPercentage(path, "80%","30%")
+        KeyBoardUtils.openKeyboard(edit_name, this@RichTextActivity)
 
     }
 }

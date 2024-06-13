@@ -372,7 +372,7 @@ public class RichEditor extends WebView {
 
     public void insertImage(String url, String alt) {
         exec("javascript:RE.prepareInsert();");
-        String testStr = "<img src=\"" + url + "\" alt=\"delImg\"  width=\"80%\">" + "<br><br>";
+        String testStr = "<img src=\"" + url + "\" alt=\"" + alt + "\" width=\"80%\"><br><br>";
         exec("javascript:RE.insertHTML('" + testStr + "');");
     }
 
