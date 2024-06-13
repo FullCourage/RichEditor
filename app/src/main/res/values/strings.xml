@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RichEditor</string>
+
+    <string name="font_size">字体大小</string>
+    <string name="font_color">字体颜色</string>
+    <string name="font_style">字体格式</string>
+    <string name="font_center">对齐文本</string>
+    <string name="font_spacing">行间距</string>
+    <string name="font_none">none</string>
+    <string name="font_highlight_color">字符底纹</string>
+    <string name="font_default_text">AaBbCcDd</string>
+    <string name="font_style_normal">普通大小</string>
+    <string name="font_style_heading_1">H1 大小</string>
+    <string name="font_style_heading_2">H2 大小</string>
+    <string name="font_style_heading_3">H3 大小</string>
+    <string name="font_insert">插入</string>
+    <string name="edit_hyperlink">编辑超链接</string>
+    <string name="address">地址:</string>
+    <string name="text_to_display">显示文本:</string>
+    <string name="ok">确定</string>
+    <string name="edit_table">编辑表格</string>
+    <string name="heading_4">H4 大小</string>
+    <string name="heading_5">H5 大小</string>
+    <string name="heading_6">H6 大小</string>
+</resources>
