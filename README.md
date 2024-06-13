@@ -4,11 +4,12 @@
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 
 富文本编辑器（基于summernote）
+具体介绍可查看我的博客：[【Android】基于webView打造富文本编辑器（H5）](https://blog.csdn.net/T01151018/article/details/139629659)
 
 # [License](https://github.com/FullCourage/RichEditor/blob/master/LICENSE)
 
 ```
-Copyright 2024 FullCourage
+Copyright 2020 FullCourage
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
